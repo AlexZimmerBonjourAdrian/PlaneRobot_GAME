@@ -41,7 +41,7 @@ public class GameManagerPlane : MonoBehaviour
         {
             // ... create them, set their player number and references needed for control.
             m_Plane[i].m_Instance =
-                Instantiate(m_TankPrefab, m_Plane[i].m_SpawnPoint.position, m_Plane[i].m_SpawnPoint.rotation) as GameObject;
+                Instantiate(m_PlanePrefab, m_Plane[i].m_SpawnPoint.position, m_Plane[i].m_SpawnPoint.rotation) as GameObject;
             m_Plane[i].m_PlayerNumber = i + 1;
             m_Plane[i].Setup();
         }
